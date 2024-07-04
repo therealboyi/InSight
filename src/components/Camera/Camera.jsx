@@ -1,8 +1,9 @@
+// src/components/camera/Camera.jsx
 import React, { useRef, useEffect } from 'react';
 import Webcam from 'react-webcam';
 import * as cocoSsd from '@tensorflow-models/coco-ssd';
 import '@tensorflow/tfjs';
-import './camera.scss';
+import './Camera.scss';
 
 const Camera = () => {
   const webcamRef = useRef(null);
@@ -72,7 +73,7 @@ const Camera = () => {
         muted={true}
         className="camera__webcam"
         videoConstraints={{
-          facingMode: "environment" // Use the rear camera
+          facingMode: "environment" 
         }}
         onUserMedia={() => console.log("Camera feed started.")}
       />
