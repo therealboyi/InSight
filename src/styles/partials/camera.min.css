@@ -1,0 +1,1 @@
+.camera{display:flex;justify-content:center;align-items:center;height:100vh;background-color:#f0f0f0;position:static}.camera__webcam,.camera__canvas{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%)}
